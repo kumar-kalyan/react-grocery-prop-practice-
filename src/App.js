@@ -1,11 +1,13 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import GroceryItem from './GroceryItem';
+import './style.css';
 
 export default function App() {
+  const items = ['egg', 'banana', 'apple', 'cheery'];
+  const cartItems = 0;
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <GroceryItem items={items} cart={cartItems} />
     </div>
   );
 }
